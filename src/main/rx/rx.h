@@ -62,7 +62,13 @@ typedef enum {
 typedef enum {
     RX_TYPE_NONE = 0,
     RX_TYPE_SERIAL,
+<<<<<<< HEAD
     RX_TYPE_MSP
+=======
+    RX_TYPE_MSP,
+    RX_TYPE_SIM,
+    RX_TYPE_PPM
+>>>>>>> c3a6283a5 (rePPM)
 } rxReceiverType_e;
 
 typedef enum {
@@ -151,6 +157,7 @@ typedef struct rxLinkQualityTracker_s {
 typedef struct rxRuntimeConfig_s {
     uint8_t channelCount;                  // number of rc channels as reported by current input driver
     timeUs_t rxSignalTimeout;
+    bool requireFiltering;
     rcReadRawDataFnPtr rcReadRawFn;
     rcFrameStatusFnPtr rcFrameStatusFn;
     rcProcessFrameFnPtr rcProcessFrameFn;

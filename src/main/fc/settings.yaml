@@ -22,7 +22,11 @@ tables:
     values: ["NONE", "AUTO", "MS4525", "ADC", "VIRTUAL", "FAKE", "MSP"]
     enum: pitotSensor_e
   - name: receiver_type
+<<<<<<< HEAD
     values: ["NONE", "SERIAL", "MSP"]
+=======
+    values: ["NONE", "SERIAL", "MSP", "SIM (SITL)", "PPM"]
+>>>>>>> c3a6283a5 (rePPM)
     enum: rxReceiverType_e
   - name: serial_rx
     values: ["SPEK1024", "SPEK2048", "SBUS", "SUMD", "IBUS", "JETIEXBUS", "CRSF", "FPORT", "SBUS_FAST", "FPORT2", "SRXL2", "GHST", "MAVLINK"]
