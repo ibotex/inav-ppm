@@ -48,7 +48,7 @@
 static IO_t rxIrqPin = IO_NONE;
 #endif
 
-void rxSpiDeviceInit()
+void rxSpiDeviceInit(void)
 {
     static bool hardwareInitialised = false;
 
