@@ -229,7 +229,7 @@ bool ppmInConfig(const timerHardware_t *timerHardwarePtr)
     ppmInit();
 
     IO_t io = IOGetByTag(timerHardwarePtr->tag);
-    IOInit(io, OWNER_PPMINPUT, RESOURCE_INPUT, 0);
+    IOInit(io, OWNER_RX, RESOURCE_INPUT, 0);
     IOConfigGPIOAF(io, timerHardwarePtr->ioMode, timerHardwarePtr->alternateFunction);
 
     timerConfigure(tch, (uint16_t)PPM_TIMER_PERIOD, PWM_TIMER_HZ);
