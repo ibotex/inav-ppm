@@ -39,7 +39,9 @@
 #include "rx/rx.h"
 #include "rx/pwm.h"
 
-#define RC_PWM_50HZ_UPDATE          (20 * 1000)     // 50Hz update rate period
+#define RC_PWM_50HZ_UPDATE          (uint8_t)(20 * 1000)     // 50Hz update rate period
+
+#define MAX_SUPPORTED_RC_PPM_CHANNEL_COUNT 12
 
 static uint16_t channelData[MAX_SUPPORTED_RC_PPM_CHANNEL_COUNT];
 

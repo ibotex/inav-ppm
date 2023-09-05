@@ -156,6 +156,7 @@ typedef struct rxLinkQualityTracker_s {
 
 typedef struct rxRuntimeConfig_s {
     uint8_t channelCount;                  // number of rc channels as reported by current input driver
+    timeUs_t rxRefreshRate;
     timeUs_t rxSignalTimeout;
     bool requireFiltering;
     rcReadRawDataFnPtr rcReadRawFn;
